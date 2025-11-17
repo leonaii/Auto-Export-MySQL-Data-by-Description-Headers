@@ -44,11 +44,14 @@ pip install -r requirements.txt
 
 如果需要在没有 Python 环境的电脑上使用，可以打包成 EXE：
 
-### 方法一：使用批处理脚本（推荐）
+### 方法一：使用 PowerShell 脚本（推荐）
 
-```bash
+```powershell
 # 直接双击运行
-build.bat
+.\build.ps1
+
+# 或者在 PowerShell 中执行
+powershell -ExecutionPolicy Bypass -File build.ps1
 ```
 
 ### 方法二：手动打包
