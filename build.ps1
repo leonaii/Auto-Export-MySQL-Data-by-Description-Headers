@@ -35,8 +35,11 @@ pyinstaller --onefile `
     --icon=NONE `
     --add-data="README.md;." `
     --hidden-import=pymysql `
-    --hidden-import=pandas `
     --hidden-import=openpyxl `
+    --collect-all pandas `
+    --collect-all numpy `
+    --collect-submodules pandas `
+    --collect-submodules numpy `
     main.py
 
 Write-Host ""
